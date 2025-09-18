@@ -1,0 +1,5 @@
+package com.arnex.store;
+
+public interface NotificationService {
+    void send(String message);
+}
