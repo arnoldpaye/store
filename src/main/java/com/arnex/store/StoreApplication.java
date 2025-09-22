@@ -12,8 +12,8 @@ public class StoreApplication {
 		/* var orderService = context.getBean(OrderService.class);
 		orderService.placeOrder(); */
 
-		var manager = context.getBean(NotificationManager.class);
-		manager.sendNotification("Your order has been placed successfully!");
+		var orderService = context.getBean(OrderService.class);
+		orderService.placeOrder();
 	}
 
 }
