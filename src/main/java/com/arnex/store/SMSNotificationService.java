@@ -1,13 +1,11 @@
 package com.arnex.store;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service("sms")
-@Primary
 public class SMSNotificationService implements NotificationService {
     @Override
-    public void send(String message) {
+    public void send(String message, String recipientEmail) {
         System.out.println("Sending SMS: " + message);
     }
 }
