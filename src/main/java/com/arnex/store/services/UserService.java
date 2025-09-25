@@ -27,4 +27,9 @@ public class UserService {
             System.out.println("Transient / Detached");
         }
     }
+
+    public void showRelatedEntities() {
+        var profile = profileRepository.findAllById(2L).
+        System.out.println(user.getEmail());
+    }
 }
